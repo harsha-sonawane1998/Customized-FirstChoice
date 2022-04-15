@@ -41,7 +41,7 @@ export default class AddProduct extends React.Component {
         await fetch(process.env.REACT_APP_BASE_URL + "/category/addcategory", reqData)
             .then(resp => resp.json())
             .then(data => this.setState({ st: data, success: true }));
-        window.location.href = "/admin";
+        window.location.href = "/viewcategory";
     }
     render() {
         return (
